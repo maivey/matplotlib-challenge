@@ -1,7 +1,116 @@
 <!DOCTYPE html>
 <html lang="en-us">
-<head>
-<!-- <meta http-equiv="refresh" content="0; url=https://maivey.github.io/docs/index.html"> -->
-</head>
-</html>
+  <head>
 
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <title>Pymaceuticals</title>
+
+    <!-- Boostrap Stylesheet -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css" media="screen">
+
+    <!-- Our own CSS stylesheet -->
+    <link rel="stylesheet" href="assets/css/styles.css" media="screen">
+
+  </head>
+
+  <body>
+    <!-- Start of navbar -->
+    <nav class="navbar navbar-default">
+      <div class="container-fluid navbar-custom">
+
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="row">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+              <span class="sr-only">Toggle Navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <div class="col-xs-9 phone-nav">
+              <a class="navbar-brand" href="index.html" id="logo">Pymaceuticals</a>
+            </div>
+          </div>
+
+          <!-- Collect the nav links, forms, and other content for toggling -->
+          <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right navbar-right-custom">
+              <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Plots <span class="caret"></span></a>
+                <ul class="dropdown-menu">
+                 <li><a href="visualizations/temp.html">Tumor Response to Treatment</a></li>
+                  <li><a href="visualizations/humidity.html">Metastatic Response to Treatment</a></li>
+                  <li><a href="visualizations/cloudiness.html">Survival Rates</a></li>
+                  <li><a href="visualizations/wind.html">Summary Bar Graph</a></li>
+                </ul>
+              </li>
+              <li><a href="comparison.html">Comparison</a></li>
+              <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Data <span class="caret"></span></a>
+                <ul class="dropdown-menu">
+                 <li><a href="data/data_clinical.html">Clinical Trial Data</a></li>
+                  <li><a href="data/data_mouse.html">Mouse Drug Data</a></li>
+                </ul>
+              </li>
+              <!-- <li><a href="data.html">Data</a></li> -->
+            </ul>
+          </div><!-- /.navbar-collapse -->
+        </div>
+      </div><!-- /.container-fluid -->
+    </nav>
+    <!-- End of navbar -->
+
+    <!-- Start of container -->
+    <div class="container">
+      <section class="row">
+        <div class="col-md-8">
+          <article class="description-content">
+            <h1 class="description-header">Summary: Comparison of Four Treatments</h1>
+            <hr class="description-hr"/>
+            <img src="images/tumorResponses.png" alt="Tumor Change" id="description-image"/>
+            <p>The purpose of this project was to analyze the data to show how four treatments (Capomulin, Infubinol, Ketapril, and Placebo) compare. In this study, 250 mice were treated through a variety of drug regimes over the course of 45 days. Their physiological responses were then monitored over the course of that time.</p>
+            <p>After assembling the dataset, I used Matplotlib to plot various aspects of the Mice responses to the four treatments. Factors I looked at included: tumor volume, number of metastatic sites, and survival rates. I then created a bar graph that compares the total % tumor volume change for each drug across the full 45 days. This site provides the source data and visualizations created as part of the analysis, as well as explanations and descriptions of any trends and correlations witnessed.</p>
+          </article>
+        </div>
+        <div class="col-md-4">
+
+          <!-- Start of Visualizations imageNav Area -->
+          <section id="imageNav-area">
+            <div class="imageNav-content">
+              <h2 class="imageNav-header">Visualizations</h2>
+              <hr />
+              <div id="images">
+                <a href="visualizations/temp.html"><img src="images/tumorResponses.png" alt="Tumor Responses" class="imageNav-photo"></a>
+                <a href="visualizations/humidity.html"><img src="images/metastaticSpread.png" alt="Metastatic Spread" class="imageNav-photo"></a>
+                <a href="visualizations/cloudiness.html"><img src="images/survivalRate.png" alt="Survival Rate" class="imageNav-photo"></a>
+                <a href="visualizations/wind.html"><img src="images/tumorChange.png" alt="Tumor Change" class="imageNav-photo"></a>
+              </div>
+            </div>
+          </section>
+          <!-- End of the Visualizations imageNav Area -->
+
+        </div>
+      </section>
+    </div>
+    <!-- End of container -->
+
+    <!-- Start of footer -->
+    <footer class="footer navbar-fixed-bottom">
+      <div class="two-toned-footer-color"></div>
+      <p class="text-muted text-muted-footer text-center">
+        <!-- &copy; Copyright Coding Bootcamp 2017 -->
+      </p>
+    </footer>
+    <!-- End of footer -->
+
+    <!-- jQuery CDN -->
+    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+
+    <!-- Bootstrap CDN -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+  </body>
+
+</html>
